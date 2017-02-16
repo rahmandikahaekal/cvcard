@@ -27,7 +27,9 @@ body {
     box-sizing: border-box;
 }
 
-section { padding: 100px 0px}
+section { 
+    padding: 80px 0px 80px 0px;
+}
 
 img {
     -webkit-user-select: none;
@@ -138,12 +140,9 @@ ol {
     -ms-transition: all .7s ease 0s;
     -o-transition: all .7s ease 0s;
 }
-
-
 .navbar-default .navbar-nav>li>a {
     color: #fff;
 }
-
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav li a:hover,
@@ -152,6 +151,9 @@ ol {
     color: #da4947 !important;
     background-color:  transparent;
 }
+
+
+
 /*==================
     BANNER
 ==================*/
@@ -231,12 +233,12 @@ ol {
 .main_about_content p {
 	padding: 30px 0px;
 }
-.main_about_content ul li {
+.detail_about li {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
     line-height: 2;
 }
-.main_about_content ul li b {
+.detail_about li b {
     color: #da4947;
 }
 .main_about_content .cover-img {
@@ -254,10 +256,132 @@ ol {
 	transform: translate(-50px,30px);
     transition: 0.4s ease-in-out 0s;
 }
+@media (max-width : 767px ) {
+    .main_about_content .cover-img,
+    .main_about_content img {
+        width: 200px;
+    }
+}
 
 /*==================
     EDUCATION
 ==================*/
 .education {
 	color: #333030;
+}
+.head_title {
+	padding-bottom: 40px;
+}
+.main_education_area {
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    padding: 45px;
+    background: #fff;
+    margin-bottom: 45px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.timeline {
+    border-left: 3px solid #da4847;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+    position: relative;
+    padding: 0 30px;
+    margin-left: 280px;
+}
+.timeline .item {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.timeline .item:before {
+    content: "";
+    position: absolute;
+    left: -43px;
+    top: 0;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #fff;
+    border: 3px solid #da4847;
+}
+.timeline .work-place {
+    position: relative;
+}
+.timeline .place {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.timeline .location {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    color: #8a8a8a;
+}
+.timeline .location .fa {
+    margin-right: 5px;
+}
+.timeline .job-meta {
+    position: absolute;
+    left: -280px;
+    top: 0;
+}
+.timeline .job-meta .title {
+    font-size: 18px;
+    color: #da4847;
+}
+.timeline .job-meta .time {
+    color: #8a8a8a;
+}
+.timeline .job-desc {
+    color: #666;
+}
+.timeline .item:after {
+    content: "";
+    position: absolute;
+    left: -37px;
+    top: 6px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #da4847;
+    z-index: 10;
+}
+@media (max-width : 767px ) {
+    .main_education_area {
+        padding: 30px;
+    }
+    .timeline {
+	   margin-left: 0;
+        padding-right: 0;
+    }
+    .timeline .job-meta {
+        position: static;
+        margin-bottom: 15px;
+    }
 }
