@@ -82,6 +82,9 @@ ol {
     list-style: none;
     padding: 0;
 }
+.head_title {
+	padding-bottom: 40px;
+}
 
 /* ========== COLOR BG ==========*/
 .bg-light {
@@ -266,13 +269,10 @@ ol {
 /*==================
     EDUCATION
 ==================*/
-.education {
+.experiences {
 	color: #333030;
 }
-.head_title {
-	padding-bottom: 40px;
-}
-.main_education_area {
+.main_experiences_area {
     -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
     -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
@@ -384,4 +384,41 @@ ol {
         position: static;
         margin-bottom: 15px;
     }
+}
+
+
+/*==================
+    SERVICES
+==================*/
+.single_service {
+    padding: 0 20px;
+    transition: 0.2s ease-out;
+    margin-bottom: 25px;
+}
+.single_service i.fa {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 50px;
+    color:  #da4847;
+    height: 50px;
+    border: 1px solid #da4847;
+    display: inline-block;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: 50px;    
+}
+.single_service h4 {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    clear: right;
+	font-size: 23px;
+}
+.single_service p {
+    margin-top: 10px;
+    overflow: hidden;
+    color: #666;
 }
