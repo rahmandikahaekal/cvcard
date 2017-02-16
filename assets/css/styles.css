@@ -96,10 +96,14 @@ ol {
 
 /* ========== CUSTOM TEXT ==========*/
 .grey-text {
+    font-size: 2.7rem;
+    font-weight: 800;
 	color : #e3e3e9;
     text-transform: uppercase;
 }
 .white-text {
+    font-size: 1.2rem;
+    font-weight: 600;
 	color: #f5edee;
     text-transform: uppercase;
 }
@@ -183,14 +187,6 @@ ol {
     width: 9rem;
     margin-bottom: 10px; 
 }
-.banner_detail p {
-    font-size: 2.7rem;
-    font-weight: 800;
-}
-.banner_detail span {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
 
 /* mouse icon */
 .scroll-downs {
@@ -267,7 +263,98 @@ ol {
 }
 
 /*==================
-    EDUCATION
+    SKILL
+==================*/
+#skill {
+    background: url(../images/bg-parallax.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.main_skill_area .head_title h2{
+    font-size: 40px; 
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+.main_skill_area .head_title p {
+	font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.main_skill_area {
+	padding: 40px 0px 80px 0px;
+}
+.main_skill_area .head_title .gradient-text {
+	color: #fff;
+}
+.skills_item {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 50px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.skills_item_progress {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #da4847;
+    border-radius: 10px;
+}
+
+.color-bg .skills-item_progress {
+    background-color: #fff;
+}
+
+.skills_item_progress:after {
+    background: none;
+    box-shadow: 0 0 0 5px;
+    opacity: 0.3;
+}
+
+.skills_item .counter {
+    position: absolute;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    width: 46px;
+    height: 24px;
+    line-height: 24px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate(50%, -100%);
+    -moz-transform: translate(50%, -100%);
+    -ms-transform: translate(50%, -100%);
+    -o-transform: translate(50%, -100%);
+    transform: translate(50%, -100%);
+}
+
+.img-bg .skills_item .counter, 
+.color-bg .skills_item .counter {
+    color: #fff;
+}
+
+.skills .progress_title {
+    color: #fff;
+    margin-top: 17px;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*==================
+    EXPERIENCES
 ==================*/
 .experiences {
 	color: #333030;
